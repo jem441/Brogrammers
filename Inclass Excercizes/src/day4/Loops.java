@@ -14,12 +14,13 @@ public class Loops {
 		
 		int counter= 0;
 		do {
-			int f=0;
-			if (intArray[f]%2!=0) {
-				intArray[f]+=5;
-			}
-			f++;
+			for (int j=0;j<intArray.length;j++) {
+				if (intArray[j]%2!=0) {
+					intArray[j]+=5;
+					//System.out.println(intArray[i]);
+				}
 			counter++;
+			}
 		}while(counter < intArray.length);
 		
 		for (int k=0;k<intArray.length;k++) {
